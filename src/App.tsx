@@ -7,6 +7,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Marketplace from "./pages/Marketplace";
+import Hotels from "./pages/Hotels";
+import Flights from "./pages/Flights";
+import Packages from "./pages/Packages";
+import Visa from "./pages/Visa";
 import ScrollbarHide from "./components/utils/ScrollbarHide";
 
 const queryClient = new QueryClient();
@@ -21,7 +25,10 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/marketplace" element={<Marketplace />} />
-          {/* We'll add more routes as we develop the application */}
+          <Route path="/hotels" element={<Hotels />} />
+          <Route path="/flights" element={<Flights />} />
+          <Route path="/packages" element={<Packages />} />
+          <Route path="/visa" element={<Visa />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -96,23 +96,23 @@ const Header = () => {
       {mobileMenuOpen && (
         <div className="md:hidden bg-white shadow-lg animate-fade-in">
           <nav className="container mx-auto py-4 flex flex-col space-y-4">
-            <Link to="/marketplace" className="flex items-center space-x-2 px-4 py-2 hover:bg-gray-100 rounded-lg">
+            <Link to="/marketplace" className="flex items-center space-x-2 px-4 py-2 hover:bg-gray-100 rounded-lg" onClick={() => setMobileMenuOpen(false)}>
               <MapPin size={18} className="text-teal" />
               <span>Destinations</span>
             </Link>
-            <Link to="/flights" className="flex items-center space-x-2 px-4 py-2 hover:bg-gray-100 rounded-lg">
+            <Link to="/flights" className="flex items-center space-x-2 px-4 py-2 hover:bg-gray-100 rounded-lg" onClick={() => setMobileMenuOpen(false)}>
               <Plane size={18} className="text-teal" />
               <span>Flights</span>
             </Link>
-            <Link to="/hotels" className="flex items-center space-x-2 px-4 py-2 hover:bg-gray-100 rounded-lg">
+            <Link to="/hotels" className="flex items-center space-x-2 px-4 py-2 hover:bg-gray-100 rounded-lg" onClick={() => setMobileMenuOpen(false)}>
               <Hotel size={18} className="text-teal" />
               <span>Hotels</span>
             </Link>
-            <Link to="/packages" className="flex items-center space-x-2 px-4 py-2 hover:bg-gray-100 rounded-lg">
+            <Link to="/packages" className="flex items-center space-x-2 px-4 py-2 hover:bg-gray-100 rounded-lg" onClick={() => setMobileMenuOpen(false)}>
               <Package size={18} className="text-teal" />
               <span>Packages</span>
             </Link>
-            <Link to="/visa" className="flex items-center space-x-2 px-4 py-2 hover:bg-gray-100 rounded-lg">
+            <Link to="/visa" className="flex items-center space-x-2 px-4 py-2 hover:bg-gray-100 rounded-lg" onClick={() => setMobileMenuOpen(false)}>
               <FileText size={18} className="text-teal" />
               <span>Visa</span>
             </Link>
